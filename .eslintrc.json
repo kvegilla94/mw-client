@@ -10,13 +10,13 @@
       "ecmaVersion": 2018
     },
     "rules": {
-      "no-console": "error",
+      "no-console": "off",
       "func-names": "off",
       "no-underscore-dangle": "off",
       "consistent-return": "off",
       "jest/expect-expect": "off",
       "security/detect-object-injection": "off",
-      "semi": ["error", "always"],
+      "semi": ["warn", "always"],
       "quotes": ["error", "single"],
       "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
     }

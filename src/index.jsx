@@ -7,14 +7,18 @@ import {
 } from 'react-router-dom';
 import './index.css';
 
-import App from './App';
+import Login from './pages/Login';
 import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
+      <Route path="/">
+        <Route index element={<Login />} />
+        <Route path="home" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   </BrowserRouter>
